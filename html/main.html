@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <script src="https://kit.fontawesome.com/f1026275ca.js"></script>
+    </head>
+    <body>
+        <div class = "header">
+            <a href="/html/main.html" ><i class="fas fa-chart-bar"></i> Dashboard</a>
+            <a href="/html/settings.html">  <i class="fas fa-cog"></i> Settings</a>
+            <div class="header-right">
+              <button class="min-button">&minus;</button>
+              <button class="exit-button">&#x2715;</button>
+            </div>
+        </div>
+        <div class="wrapper">
+          <div class="groupMenu">
+            <h2>Group Members</h2>
+              <ul style="list-style: none;">
+                <li><div>1</div><div style="text-align: left;">Merry</div><div>500m</div></li>
+                <li><div>1</div><div>Merry</div><div>500m</div></li>
+                <li><div>1</div><div>Merry</div><div>500m</div></li>
+                <li><div>1</div><div>Merry</div><div>500m</div></li>
+                <li><div>1</div><div>Merry</div><div>500m</div></li>
+                <li><div>1</div><div>Merry</div><div>500m</div></li>
+                <li><div>1</div><div>Merry</div><div>500m</div></li>
+                <li><div>1</div><div>Merry</div><div>500m</div></li>
+                <li><div>1</div><div>Merry</div><div>500m</div></li>
+                <li><div>1</div><div>Merry</div><div>500m</div></li>
+                <li><div>1</div><div>Merry</div><div>500m</div></li>
+                <li><div>1</div><div>Merry</div><div>500m</div></li>
+                <li><div>1</div><div>Merry</div><div>500m</div></li>
+                <li><div>1</div><div>Merry</div><div>500m</div></li>
+                <li><div>1</div><div>Merry</div><div>500m</div></li>
+                <li><div>1</div><div>Merry</div><div>500m</div></li>
+                <li><div>1</div><div>Merry</div><div>500m</div></li>
+                <li><div>1</div><div>Merry</div><div>500m</div></li>
+                <li><div>1</div><div>Merry</div><div>500m</div></li>
+                <li><div>1</div><div>Merry</div><div>500m</div></li>
+                <li><div>1</div><div>Merry</div><div>500m</div></li>
+                <li><div>1</div><div>Merry</div><div>500m</div></li>
+              </ul>
+              <div class="menuButtons">
+                  <button id="add">Add</button>
+                  <button id ="refresh">Refresh</button>
+                  <button id="delete">Delete</button>
+                
+                </div>
+          </div>
+          <div class="deviceInfo">
+            Device Info
+            <div class="deviceInfoForm">
+              <div>
+                  <label>Device Name: </label><label id="deviceName">Kevin's Device</label><br>
+                  <label>MAC Address: </label><label id="macAddress">45-AC-11-10-64-F9</label>
+              </div>
+              <div>
+                 <label>Battery Life:  </label> <label id="batteryLife" style="color:rgb(0, 179, 0);">100%</label>
+              </div>
+            </div> 
+          </div>
+  
+          <div id="map"></div>
+        </div>
+        <script>
+          var map;
+          function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+              center: {lat: -34.397, lng: 150.644},
+              zoom: 8
+            });
+          }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuYKf3qz8QCRci3JQThhnT4fjyxP_c-L8&callback=initMap"
+        async defer></script>
+    </body>
+    <footer>
+      <div>
+        <label>V 0.1 Beta  </label>
+        <a href="" class="fas fa-sync">Check for Updates</a>
+    </div>
+      <label class="copyright">Copyright &#169 Proximiti 2019</label>
+    </footer>
+</html>

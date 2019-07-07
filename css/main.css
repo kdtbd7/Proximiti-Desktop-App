@@ -1,0 +1,263 @@
+html {
+  /*  background-image: -webkit-linear-gradient(315deg, #F45C43,#EB3349, rgb(185, 46, 70)); */
+  /*background-image: linear-gradient(to right bottom, #d16ba5, #d172b4, #cf7ac3, #cb82d1, #c68bdf, #c08ee5, #b990ea, #b293ef, #a990ed, #a18ceb, #9789e9, #8e86e7); */
+  /*background-image: linear-gradient(to left top, #d16ba5, #e87294, #f58083, #fa9274, #f7a76a); */
+  /* background-image: linear-gradient(to left top, #f7776a, #f88368, #f98f67, #f89b67,#f88368, #F7776A); */
+  background-image: linear-gradient(to left top, #302e52, #004A59, #302e52);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    font-family: "Geneva", Tahoma, sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+
+h1 {
+    align-content: block;
+}
+
+h2 {
+    margin-top: 50px;
+    text-align: center;
+    width: 90%;
+}
+
+.header {
+    -webkit-app-region: drag;
+    overflow: hidden;
+    padding: 10px 5px;
+    float: left;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+} 
+
+.header a {
+    color: white;
+    text-align: center;
+    padding: 15px;
+   text-decoration: none;
+    
+}
+
+.header a:hover {
+    color: black;
+    text-align: center;
+    padding: 15px;
+   text-decoration: none;
+    
+}
+
+.header a:active {
+    color: blue;
+    text-align: center;
+    padding: 15px;
+   text-decoration: none;
+    
+}
+
+.header-right {
+    float: right;
+    padding-right: 10px;
+}
+
+.header-right > button {
+    color: white;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position:relative;
+    -webkit-appearance: inherit;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    margin: 0em;
+    padding: 1px 7px 2px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.header-right > button:active {
+    background-color: rgb(62, 154, 252);
+}
+
+.min-button {
+    color: yellow;
+    
+}
+
+.exit-button {
+    color: red;
+    
+}
+
+.deviceInfo {
+    grid-area: deviceInfo;
+    text-align: center;
+    margin: 70px 40px 0px 20px;
+    height: 85px;
+    width: 85%;
+    color: white;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.deviceInfoForm {
+    height: 80%;
+    padding-left: 20px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 66% 1fr;
+}
+
+.wrapper {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 35% 1fr;
+    grid-template-rows: 22% 1fr;
+    grid-template-areas:  
+    "groupMenu deviceInfo"
+    "groupMenu googleMap";
+    grid-gap: 10px;
+    justify-content: space-between;
+}
+
+#deviceName{
+    margin-bottom: 7px;
+}
+
+#deviceName, #macAddress, #batteryLife {
+    display: inline-block;
+    background-color: rgba(0, 0, 0,0.3);
+    border-radius: 5px;
+    padding: 2px 4px 2px 4px;
+}
+
+
+.groupMenu {
+    grid-area: groupMenu;
+    width: 100%;
+    height: 100%;
+    margin: 20px 20px 0px 40px;
+    padding: 0px 20px 0px 0px; 
+    color: white;
+    font-size: 24;
+
+}
+
+.groupMenu ul {
+    width: 90%;
+    left: 0;
+    padding-inline-start: 0px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 450px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+} 
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+} 
+::-webkit-scrollbar-button {
+    background-color: #7c2929;
+} 
+::-webkit-scrollbar-corner {
+    background-color: black;
+} 
+
+.groupMenu ul li {
+    padding: 2px;
+    width: 95%;
+    left: 0;
+    border-radius: 5px;
+    display: inline-grid;
+    grid-template-columns: 10% auto 30%;
+}
+
+.groupMenu ul li:active {
+    color: white;
+}
+
+.groupMenu ul li > div {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    margin: 0px 0px 0px 4px;
+    padding: 5px 00px 5px 3px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+.menuButtons {
+    margin: 00px 20px 0px 00px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    align-items: center;
+}
+.menuButtons button {
+    background: rgba(0, 0, 0, 0);
+    padding: 5px 10px 5px 10px;
+    width: 70px;
+    border-radius: 5px;
+    color: white;
+}
+
+#add {
+background-color: rgb(0, 179, 0);
+border-color: green;
+margin-right: 50px;
+}
+
+#refresh {
+    border-color: rgb(211, 211, 4);
+    background-color: rgb(228, 228, 53);
+
+}
+
+#delete {
+    border-color: rgb(189, 1, 1);
+    background-color: rgb(189, 1, 1);
+    margin-left: 50px;
+}
+
+#map {
+    grid-area: googleMap; 
+    margin: 0px 0px 00px 20px;
+    height: 80%;
+    width: 85%;
+    border: 0px;
+    float: right;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    height: 50px;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.copyright {
+    text-align: right;
+}

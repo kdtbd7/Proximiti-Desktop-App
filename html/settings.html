@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <script src="https://kit.fontawesome.com/f1026275ca.js"></script>
+    </head>
+    <body>
+        <div class = "header">
+            <a href="/html/main.html">
+                <i class="fas fa-chart-bar"></i> Dashboard</a>
+            <a href="/html/settings.html">
+                <i class="fas fa-cogs"></i>
+                Settings</a>
+            <div class="header-right">
+              <button class="header-button">&minus;</button>
+              <button class="header-button">&#x2715;</button>
+            </div>
+        </div>
+       <div class = "settingsMenu">
+         <div>
+           <label>Device Name</label>
+           <input type="text" minlength="4" maxlength="16">
+        </div>
+         <div>
+           <label>Red</label>
+           <input type="range" min="0" max="255" step="1">
+          <label>255</label>
+        </div>
+         <div>
+           <label>Green</label> 
+           <input type="range" min="0" max="255" step="1">
+           <label>255</label>
+          </div>
+         <div>
+           <label>Blue</label> 
+           <input type="range" min="0" max="255" step="1">
+           <label>255</label>
+          </div>
+          <div>
+            <label>Low Power Mode:</label>
+            <input type ="checkbox">
+          </div>
+          <button type="submit">Save Changes</button>
+       </div>
+    </body>
+    <footer>
+    </footer>
+</html>
