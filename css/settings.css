@@ -1,0 +1,22 @@
+
+.settingsMenu {
+    width: 50%;
+    color: white;
+    margin: 80px 0px 0px 20px;
+
+}
+
+.settingsMenu > *{
+    margin: 20px 10px 10px 20px;
+}
+
+.settingsMenu button {
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: "Geneva", Tahoma, sans-serif;
+}
+
+

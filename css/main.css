@@ -3,7 +3,8 @@ html {
   /*background-image: linear-gradient(to right bottom, #d16ba5, #d172b4, #cf7ac3, #cb82d1, #c68bdf, #c08ee5, #b990ea, #b293ef, #a990ed, #a18ceb, #9789e9, #8e86e7); */
   /*background-image: linear-gradient(to left top, #d16ba5, #e87294, #f58083, #fa9274, #f7a76a); */
   /* background-image: linear-gradient(to left top, #f7776a, #f88368, #f98f67, #f89b67,#f88368, #F7776A); */
-  background-image: linear-gradient(to left top, #302e52, #004A59, #302e52);
+  background-image: linear-gradient(to left top, #1c1b2f, rgb(1, 47, 56), #302e52);
+  background-image: rgba(0,0,0,0.5);
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
@@ -30,7 +31,7 @@ h2 {
     overflow: hidden;
     padding: 10px 5px;
     float: left;
-    background-color: rgba(0,0,0,0.5);
+    background-color: #11515d;
     position: fixed;
     top: 0;
     left: 0;
@@ -82,19 +83,10 @@ h2 {
     font-size: 16px;
 }
 
-.header-right > button:active {
+.header-right > button:active, .settingsMenu button:active {
     background-color: rgb(62, 154, 252);
 }
 
-.min-button {
-    color: yellow;
-    
-}
-
-.exit-button {
-    color: red;
-    
-}
 
 .deviceInfo {
     grid-area: deviceInfo;
@@ -104,7 +96,8 @@ h2 {
     width: 85%;
     color: white;
     border-radius: 5px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: #11515d;
+    padding-top: 5px;
 }
 
 .deviceInfoForm {
@@ -166,7 +159,7 @@ h2 {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 } 
 ::-webkit-scrollbar-thumb {
@@ -194,7 +187,7 @@ h2 {
 }
 
 .groupMenu ul li > div {
-    background-color: rgba(0,0,0,0.5);
+    background-color: #11515d;
     border-radius: 5px;
     margin: 0px 0px 0px 4px;
     padding: 5px 00px 5px 3px;
@@ -251,7 +244,7 @@ footer {
     width: 100%;
     left: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: #11515d;
     height: 50px;
     color: white;
     display: grid;
@@ -260,4 +253,10 @@ footer {
 
 .copyright {
     text-align: right;
+    padding: 10px 10px 0px 0px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
 }
